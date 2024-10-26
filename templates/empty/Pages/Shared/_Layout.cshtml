@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="hydro-config" />
+  <title>@ViewData["Title"] - Hydro</title>
+  <link rel="stylesheet" href="~/css/normalize.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/HydroTemplates.Empty.styles.css" asp-append-version="true" />
+  <link rel="icon" type="image/png" href="/images/logo-icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/logo-icon.png">
+  <script src="~/hydro/hydro.js" asp-append-version="true"></script>
+  <script src="~/hydro/alpine.js" asp-append-version="true"></script>
+</head>
+<body>
+
+<div class="layout">
+  <main role="main">
+    @RenderBody()
+  </main>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+@model Counter
+
+<div class="card">
+  <div>
+    Value is: <strong>@Model.Value</strong>
+  </div>
+
+  <button hydro-on:click="@(() => Model.Add())" class="btn">
+    Add
+  </button>
+</div>

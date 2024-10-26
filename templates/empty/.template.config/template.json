@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/template",
+  "author": "Me",
+  "classifications": [ "Web", "Razor Pages", "Hydro" ],
+  "identity": "Hydro.Templates.Empty",
+  "name": "Hydro",
+  "shortName": "hydro",
+  "sourceName":"HydroTemplates.Empty",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}

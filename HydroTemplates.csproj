@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <PackageType>Template</PackageType>
+    <PackageId>Hydro.Templates.Empty</PackageId>
+    <Title>Hydro templates</Title>
+    <Description>Hydro templates</Description>
+    <Authors>Krzystof Jeske</Authors>
+    <Copyright>Copyright (c) Krzysztof Jeske</Copyright>
+    <Description>Hydro</Description>
+    <PackageTags>dotnet-new;templates;hydro</PackageTags>
+    <PackageProjectUrl>https://github.com/hydrostack/hydro-templates</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/hydrostack/hydro.git</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RootNamespace>HydroTemplate</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+    <Compile Remove="**\*" />
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="4.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

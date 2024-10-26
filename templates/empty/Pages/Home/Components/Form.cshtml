@@ -1,0 +1,17 @@
+@model Form
+
+<form class="card">
+  <label asp-for="Name">Your name:</label>
+  <input type="text" class="input text-center" asp-for="Name" hydro-bind:keyup.debounce.0>
+
+  @if (!string.IsNullOrWhiteSpace(Model.Name))
+  {
+    <div>
+      Hello, <strong>@Model.Name</strong>!
+    </div>
+    
+    <button type="submit" hydro-on:click.prevent.debounce.100ms="@(() => Model.Send())" class="btn">
+      Submit
+    </button>
+  }
+</form>

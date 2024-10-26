@@ -1,0 +1,12 @@
+@model EventReceiver
+
+@if (Model.Name != null)
+{
+  <div class="card init" style="z-index: -1;">
+    <span class="text-center">Received an event with name: <strong>@Model.Name</strong>!</span>
+  </div>
+}
+else
+{
+  <div></div>
+}
