@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <PackageType>Template</PackageType>
-    <PackageId>Hydro.Templates.Empty</PackageId>
+    <PackageId>Hydro.Templates</PackageId>
     <Title>Hydro templates</Title>
     <Description>Hydro templates</Description>
     <Authors>Krzystof Jeske</Authors>
