@@ -11,7 +11,7 @@
     <PackageTags>dotnet-new;templates;hydro</PackageTags>
     <PackageProjectUrl>https://github.com/hydrostack/hydro-templates</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/hydrostack/hydro.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/hydrostack/hydro-templates.git</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
