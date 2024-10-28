@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Hydro" Version="0.16.2" />
+    <PackageReference Include="Hydro" Version="1.0.0" />
   </ItemGroup>
 
 </Project>

@@ -1,8 +1,8 @@
 using Hydro;
 
-namespace HydroTemplates.Empty.Pages.Home.Components;
+namespace HydroTemplates.Tailwind.Pages.Home.Components;
 
-public class Form : HydroComponent
+public class NameForm : HydroComponent
 {
     public string Name { get; set; }
 

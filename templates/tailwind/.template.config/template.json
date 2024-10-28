@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/template",
+  "author": "Krzysztof Jeske",
+  "classifications": [ "Web", "Razor Pages", "Hydro" ],
+  "identity": "Hydro.Templates.Tailwind",
+  "name": "Hydro with Tailwind",
+  "shortName": "hydro-tailwind",
+  "sourceName":"HydroTemplates.Tailwind",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [
+            "wwwroot/css/output.css"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/template",
-  "author": "Me",
+  "author": "Krzysztof Jeske",
   "classifications": [ "Web", "Razor Pages", "Hydro" ],
   "identity": "Hydro.Templates.Empty",
   "name": "Hydro",

@@ -1,0 +1,19 @@
+@model NameForm
+
+<card>
+  <form class="flex flex-col gap-2 items-center">
+    <label asp-for="Name">Your name:</label>
+    <input type="text" asp-for="Name" hydro-bind:keyup.debounce.0 class="border border-black rounded px-2.5 py-2 outline-none">
+
+    @if (!string.IsNullOrWhiteSpace(Model.Name))
+    {
+      <div>
+        Hello, <strong>@Model.Name</strong>!
+      </div>
+
+      <button type="submit" on:click.prevent.debounce.100ms="@(() => Model.Send())" class="border-none outline-none rounded-md px-2 py-1 bg-[#7b34b2] text-white">
+        Submit
+      </button>
+    }
+  </form>
+</card>

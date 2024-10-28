@@ -1,0 +1,23 @@
+﻿@page "/"
+@model IndexModel
+
+@{
+  ViewBag.Title = "Home";
+}
+
+<div class="p-8 flex flex-col items-center">
+  <logo />
+
+  <h1 class="mb-4 text-center text-3xl font-bold">
+    Welcome to Hydro!
+  </h1>
+
+  <h4 class="mb-12 font-semibold text-center max-w-[400px]">
+    Bring stateful and reactive components to<br/>
+    ASP.NET Core without writing JavaScript
+  </h4>
+
+  <counter />
+  <name-form />
+  <event-receiver />
+</div>

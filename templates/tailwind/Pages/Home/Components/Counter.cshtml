@@ -1,0 +1,11 @@
+@model Counter
+
+<card>
+  <div>
+    Value is: <strong>@Model.Value</strong>
+  </div>
+
+  <button on:click="@(() => Model.Add())" class="border-none outline-none rounded-md px-2 py-1 bg-[#7b34b2] text-white">
+    Add
+  </button>
+</card>

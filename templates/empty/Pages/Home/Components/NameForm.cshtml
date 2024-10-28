@@ -1,4 +1,4 @@
-@model Form
+@model NameForm
 
 <form class="card">
   <label asp-for="Name">Your name:</label>
@@ -10,7 +10,7 @@
       Hello, <strong>@Model.Name</strong>!
     </div>
     
-    <button type="submit" hydro-on:click.prevent.debounce.100ms="@(() => Model.Send())" class="btn">
+    <button type="submit" on:click.prevent.debounce.100ms="@(() => Model.Send())" class="btn">
       Submit
     </button>
   }

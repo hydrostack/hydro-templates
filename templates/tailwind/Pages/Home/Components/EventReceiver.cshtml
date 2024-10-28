@@ -1,0 +1,12 @@
+@model EventReceiver
+
+@if (Model.Name != null)
+{
+  <card class="animate-swipe -z-10">
+    <span class="text-center">Received an event with name: <strong>@Model.Name</strong>!</span>
+  </card>
+}
+else
+{
+  <div></div>
+}

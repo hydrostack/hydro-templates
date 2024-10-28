@@ -1,21 +1,20 @@
 ﻿@page "/"
-@using Hydro.TagHelpers
 @model IndexModel
 
 @{
   ViewBag.Title = "Home";
 }
 
-<div class="rounded bg-base p-8 flex">
+<div class="rounded p-8 flex">
   <div class="logo-container">
     <div class="logo-bg"></div>
     <img class="logo" src="images/logo.png" alt="Logo" />
   </div>
-  
-  <h1 class="mb-4 text-center">Welcome to Hydro!</h1>
-  <h4 class="mb-12 font-semibold text-center" style="max-width: 400px">Bring stateful and reactive components to ASP.NET Core without writing JavaScript</h4>
 
-  <hydro name="Counter" />
-  <hydro name="Form" />
-  <hydro name="EventReceiver" />
+  <h1 class="mb-4 text-center">Welcome to Hydro!</h1>
+  <h4 class="mb-12 font-semibold text-center m-w-[400px]">Bring stateful and reactive components to ASP.NET Core without writing JavaScript</h4>
+
+  <counter />
+  <name-form />
+  <event-receiver />
 </div>

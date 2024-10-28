@@ -20,9 +20,6 @@ body {
   border-radius: 6px;
 }
 
-.bg-base {
-}
-
 .p-8 {
   padding: 24px;
 }
@@ -48,6 +45,14 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   filter: blur(40px) opacity(63%);
   transform: translate(-50%, -50%);
+}
+
+.m-w-\[400px\] {
+  max-width: 400px;
+}
+
+.m-w-\[900px\] {
+  max-width: 900px;
 }
 
 .logo {
