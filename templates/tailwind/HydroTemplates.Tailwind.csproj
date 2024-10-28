@@ -9,8 +9,11 @@
     <PackageReference Include="Hydro" Version="1.0.0" />
   </ItemGroup>
 
-  <Target Name="BuildTailwind" BeforeTargets="Build" Condition="'$(Configuration)' == 'Release'">
-    <Exec Command="tailwindcss -i ./wwwroot/css/input.css -o ./wwwroot/css/output.css --minify" />
+  <Target Name="BuildTailwind" BeforeTargets="Build">
+    <PropertyGroup>
+      <TailwindMinify Condition="'$(Configuration)'=='Release'">--minify</TailwindMinify>
+    </PropertyGroup>
+    <Exec Command="tailwindcss -i ./wwwroot/css/input.css -o ./wwwroot/css/output.css $(TailwindMinify)" />
   </Target>
   
 </Project>
