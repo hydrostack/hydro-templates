@@ -1,39 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
 
-@layer base {
-  :root {
-    --main: 0 0% 100%;
-    --main-foreground: 240 10% 3.9%;
-    --primary: 220 75% 50%;
-    --primary-accent: 220 75% 55%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 40%;
-    --error: 0 84.2% 60.2%;
-    --error-foreground: 0 0% 100%;
-    --control: 240 5.9% 90%;
-    --input: 240 4.9% 84%;
-    --ring: 240 5% 65%;
-  }
-  .dark {
-    --main: 221.25 19.51% 16.08%;
-    --main-foreground: 0 0% 98%;
-    --primary: 221.21 77.08% 51.35%;
-    --primary-foreground: 0 0% 90%;
-    --secondary: 220 19% 20%;
-    --secondary-foreground: 0 0% 98%;
-    --accent: 221.25 19.51% 14%;
-    --accent-foreground: 221.25 19.51% 55%;
-    --error: 0 84.2% 60.2%;
-    --error-foreground: 0 0% 100%;
-    --control: 217.5 13.11% 25%;
-    --input: 217.5 13.11% 30%;
-    --ring: 240 3.8% 46.1%;
-  }
+@source "./**/*.{cshtml,cs}";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-main: hsl(0 0% 100%);
+  --color-main-foreground: hsl(240 10% 3.9%);
+  --color-primary: hsl(220 75% 50%);
+  --color-primary-accent: hsl(220 75% 55%);
+  --color-primary-foreground: hsl(0 0% 98%);
+  --color-secondary: hsl(240 4.8% 95.9%);
+  --color-secondary-foreground: hsl(240 5.9% 10%);
+  --color-accent: hsl(240 4.8% 95.9%);
+  --color-accent-foreground: hsl(240 5.9% 40%);
+  --color-error: hsl(0 84.2% 60.2%);
+  --color-error-foreground: hsl(0 0% 100%);
+  --color-control: hsl(240 5.9% 90%);
+  --color-input: hsl(240 4.9% 84%);
+  --color-ring: hsl(240 5% 65%);
 }
 
 body {
